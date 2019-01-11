@@ -38,9 +38,9 @@
             var userName = $('#userName').val();
             var passWord = $('#passWord').val();
             $.ajax({
-                url: 'http://localhost:3000/login',
+                url: 'http://10.30.29.77:80/T1/login.php',
                 type: 'POST',
-                contentType: 'application/json;charset=utf-8',
+                contentType: 'application/x-www-data-urlencoded',
                 dataType:'json',
                 xhrFields:{withCredentials:true},
                 data: JSON.stringify({
